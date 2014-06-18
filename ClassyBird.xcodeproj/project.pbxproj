@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93ADB90F18D3F272006AA19F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADB90E18D3F272006AA19F /* Foundation.framework */; };
+		93ADB91118D3F272006AA19F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADB91018D3F272006AA19F /* CoreGraphics.framework */; };
+		93ADB91318D3F272006AA19F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADB91218D3F272006AA19F /* UIKit.framework */; };
+		93ADB91518D3F272006AA19F /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADB91418D3F272006AA19F /* SpriteKit.framework */; };
+		93ADB91B18D3F272006AA19F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB91918D3F272006AA19F /* InfoPlist.strings */; };
+		93ADB91D18D3F272006AA19F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB91C18D3F272006AA19F /* main.m */; };
+		93ADB92118D3F272006AA19F /* ClassyBirdAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB92018D3F272006AA19F /* ClassyBirdAppDelegate.m */; };
+		93ADB92418D3F272006AA19F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB92218D3F272006AA19F /* Main.storyboard */; };
+		93ADB92718D3F272006AA19F /* ClassyBirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB92618D3F272006AA19F /* ClassyBirdViewController.m */; };
+		93ADB92A18D3F272006AA19F /* ClassyBirdMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB92918D3F272006AA19F /* ClassyBirdMyScene.m */; };
+		93ADB92E18D3F272006AA19F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB92D18D3F272006AA19F /* Images.xcassets */; };
+		93ADB93518D3F272006AA19F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADB93418D3F272006AA19F /* XCTest.framework */; };
+		93ADB93618D3F272006AA19F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADB90E18D3F272006AA19F /* Foundation.framework */; };
+		93ADB93718D3F272006AA19F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADB91218D3F272006AA19F /* UIKit.framework */; };
+		93ADB93F18D3F272006AA19F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB93D18D3F272006AA19F /* InfoPlist.strings */; };
+		93ADB94118D3F272006AA19F /* ClassyBirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB94018D3F272006AA19F /* ClassyBirdTests.m */; };
+		93ADB9B718D3FCE0006AA19F /* backgrounds.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB99B18D3FCE0006AA19F /* backgrounds.atlas */; };
+		93ADB9B818D3FCE0006AA19F /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB99C18D3FCE0006AA19F /* sprites.atlas */; };
+		93ADB9B918D3FCE0006AA19F /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB99F18D3FCE0006AA19F /* SKAction+SKTExtras.m */; };
+		93ADB9BA18D3FCE0006AA19F /* SKAction+SKTSpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB9A118D3FCE0006AA19F /* SKAction+SKTSpecialEffects.m */; };
+		93ADB9BB18D3FCE0006AA19F /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB9A318D3FCE0006AA19F /* SKEmitterNode+SKTExtras.m */; };
+		93ADB9BC18D3FCE0006AA19F /* SKNode+SKTDebugDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB9A518D3FCE0006AA19F /* SKNode+SKTDebugDraw.m */; };
+		93ADB9BD18D3FCE0006AA19F /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB9A718D3FCE0006AA19F /* SKNode+SKTExtras.m */; };
+		93ADB9BE18D3FCE0006AA19F /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB9A918D3FCE0006AA19F /* SKTAudio.m */; };
+		93ADB9BF18D3FCE0006AA19F /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB9AB18D3FCE0006AA19F /* SKTEffects.m */; };
+		93ADB9C018D3FCE0006AA19F /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ADB9AD18D3FCE0006AA19F /* SKTTimingFunctions.m */; };
+		93ADB9C118D3FCE0006AA19F /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB9B018D3FCE0006AA19F /* coin.wav */; };
+		93ADB9C218D3FCE0006AA19F /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB9B118D3FCE0006AA19F /* ding.wav */; };
+		93ADB9C318D3FCE0006AA19F /* falling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB9B218D3FCE0006AA19F /* falling.wav */; };
+		93ADB9C418D3FCE0006AA19F /* flapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB9B318D3FCE0006AA19F /* flapping.wav */; };
+		93ADB9C518D3FCE0006AA19F /* hitGround.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB9B418D3FCE0006AA19F /* hitGround.wav */; };
+		93ADB9C618D3FCE0006AA19F /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB9B518D3FCE0006AA19F /* pop.wav */; };
+		93ADB9C718D3FCE0006AA19F /* whack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93ADB9B618D3FCE0006AA19F /* whack.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93ADB93818D3F272006AA19F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93ADB90318D3F272006AA19F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93ADB90A18D3F272006AA19F;
+			remoteInfo = ClassyBird;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93ADB90B18D3F272006AA19F /* ClassyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93ADB90E18D3F272006AA19F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93ADB91018D3F272006AA19F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93ADB91218D3F272006AA19F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93ADB91418D3F272006AA19F /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		93ADB91818D3F272006AA19F /* ClassyBird-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassyBird-Info.plist"; sourceTree = "<group>"; };
+		93ADB91A18D3F272006AA19F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93ADB91C18D3F272006AA19F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93ADB91E18D3F272006AA19F /* ClassyBird-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassyBird-Prefix.pch"; sourceTree = "<group>"; };
+		93ADB91F18D3F272006AA19F /* ClassyBirdAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassyBirdAppDelegate.h; sourceTree = "<group>"; };
+		93ADB92018D3F272006AA19F /* ClassyBirdAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassyBirdAppDelegate.m; sourceTree = "<group>"; };
+		93ADB92318D3F272006AA19F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93ADB92518D3F272006AA19F /* ClassyBirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassyBirdViewController.h; sourceTree = "<group>"; };
+		93ADB92618D3F272006AA19F /* ClassyBirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassyBirdViewController.m; sourceTree = "<group>"; };
+		93ADB92818D3F272006AA19F /* ClassyBirdMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassyBirdMyScene.h; sourceTree = "<group>"; };
+		93ADB92918D3F272006AA19F /* ClassyBirdMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassyBirdMyScene.m; sourceTree = "<group>"; };
+		93ADB92D18D3F272006AA19F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93ADB93318D3F272006AA19F /* ClassyBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassyBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93ADB93418D3F272006AA19F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		93ADB93C18D3F272006AA19F /* ClassyBirdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassyBirdTests-Info.plist"; sourceTree = "<group>"; };
+		93ADB93E18D3F272006AA19F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93ADB94018D3F272006AA19F /* ClassyBirdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassyBirdTests.m; sourceTree = "<group>"; };
+		93ADB99B18D3FCE0006AA19F /* backgrounds.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = backgrounds.atlas; sourceTree = "<group>"; };
+		93ADB99C18D3FCE0006AA19F /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		93ADB99E18D3FCE0006AA19F /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		93ADB99F18D3FCE0006AA19F /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		93ADB9A018D3FCE0006AA19F /* SKAction+SKTSpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTSpecialEffects.h"; sourceTree = "<group>"; };
+		93ADB9A118D3FCE0006AA19F /* SKAction+SKTSpecialEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTSpecialEffects.m"; sourceTree = "<group>"; };
+		93ADB9A218D3FCE0006AA19F /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		93ADB9A318D3FCE0006AA19F /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		93ADB9A418D3FCE0006AA19F /* SKNode+SKTDebugDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTDebugDraw.h"; sourceTree = "<group>"; };
+		93ADB9A518D3FCE0006AA19F /* SKNode+SKTDebugDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTDebugDraw.m"; sourceTree = "<group>"; };
+		93ADB9A618D3FCE0006AA19F /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		93ADB9A718D3FCE0006AA19F /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		93ADB9A818D3FCE0006AA19F /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		93ADB9A918D3FCE0006AA19F /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		93ADB9AA18D3FCE0006AA19F /* SKTEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEffects.h; sourceTree = "<group>"; };
+		93ADB9AB18D3FCE0006AA19F /* SKTEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEffects.m; sourceTree = "<group>"; };
+		93ADB9AC18D3FCE0006AA19F /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
+		93ADB9AD18D3FCE0006AA19F /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
+		93ADB9AE18D3FCE0006AA19F /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		93ADB9B018D3FCE0006AA19F /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		93ADB9B118D3FCE0006AA19F /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		93ADB9B218D3FCE0006AA19F /* falling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = falling.wav; sourceTree = "<group>"; };
+		93ADB9B318D3FCE0006AA19F /* flapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flapping.wav; sourceTree = "<group>"; };
+		93ADB9B418D3FCE0006AA19F /* hitGround.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitGround.wav; sourceTree = "<group>"; };
+		93ADB9B518D3FCE0006AA19F /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		93ADB9B618D3FCE0006AA19F /* whack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whack.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93ADB90818D3F272006AA19F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADB91118D3F272006AA19F /* CoreGraphics.framework in Frameworks */,
+				93ADB91318D3F272006AA19F /* UIKit.framework in Frameworks */,
+				93ADB91518D3F272006AA19F /* SpriteKit.framework in Frameworks */,
+				93ADB90F18D3F272006AA19F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ADB93018D3F272006AA19F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADB93518D3F272006AA19F /* XCTest.framework in Frameworks */,
+				93ADB93718D3F272006AA19F /* UIKit.framework in Frameworks */,
+				93ADB93618D3F272006AA19F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93ADB90218D3F272006AA19F = {
+			isa = PBXGroup;
+			children = (
+				93ADB91618D3F272006AA19F /* ClassyBird */,
+				93ADB93A18D3F272006AA19F /* ClassyBirdTests */,
+				93ADB90D18D3F272006AA19F /* Frameworks */,
+				93ADB90C18D3F272006AA19F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93ADB90C18D3F272006AA19F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB90B18D3F272006AA19F /* ClassyBird.app */,
+				93ADB93318D3F272006AA19F /* ClassyBirdTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93ADB90D18D3F272006AA19F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB90E18D3F272006AA19F /* Foundation.framework */,
+				93ADB91018D3F272006AA19F /* CoreGraphics.framework */,
+				93ADB91218D3F272006AA19F /* UIKit.framework */,
+				93ADB91418D3F272006AA19F /* SpriteKit.framework */,
+				93ADB93418D3F272006AA19F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93ADB91618D3F272006AA19F /* ClassyBird */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB99918D3FCE0006AA19F /* Resources */,
+				93ADB91F18D3F272006AA19F /* ClassyBirdAppDelegate.h */,
+				93ADB92018D3F272006AA19F /* ClassyBirdAppDelegate.m */,
+				93ADB92218D3F272006AA19F /* Main.storyboard */,
+				93ADB92518D3F272006AA19F /* ClassyBirdViewController.h */,
+				93ADB92618D3F272006AA19F /* ClassyBirdViewController.m */,
+				93ADB92818D3F272006AA19F /* ClassyBirdMyScene.h */,
+				93ADB92918D3F272006AA19F /* ClassyBirdMyScene.m */,
+				93ADB92D18D3F272006AA19F /* Images.xcassets */,
+				93ADB91718D3F272006AA19F /* Supporting Files */,
+			);
+			path = ClassyBird;
+			sourceTree = "<group>";
+		};
+		93ADB91718D3F272006AA19F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB91818D3F272006AA19F /* ClassyBird-Info.plist */,
+				93ADB91918D3F272006AA19F /* InfoPlist.strings */,
+				93ADB91C18D3F272006AA19F /* main.m */,
+				93ADB91E18D3F272006AA19F /* ClassyBird-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93ADB93A18D3F272006AA19F /* ClassyBirdTests */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB94018D3F272006AA19F /* ClassyBirdTests.m */,
+				93ADB93B18D3F272006AA19F /* Supporting Files */,
+			);
+			path = ClassyBirdTests;
+			sourceTree = "<group>";
+		};
+		93ADB93B18D3F272006AA19F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB93C18D3F272006AA19F /* ClassyBirdTests-Info.plist */,
+				93ADB93D18D3F272006AA19F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93ADB99918D3FCE0006AA19F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB99A18D3FCE0006AA19F /* Art */,
+				93ADB99D18D3FCE0006AA19F /* SKTUtils */,
+				93ADB9AF18D3FCE0006AA19F /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93ADB99A18D3FCE0006AA19F /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB99B18D3FCE0006AA19F /* backgrounds.atlas */,
+				93ADB99C18D3FCE0006AA19F /* sprites.atlas */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		93ADB99D18D3FCE0006AA19F /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB99E18D3FCE0006AA19F /* SKAction+SKTExtras.h */,
+				93ADB99F18D3FCE0006AA19F /* SKAction+SKTExtras.m */,
+				93ADB9A018D3FCE0006AA19F /* SKAction+SKTSpecialEffects.h */,
+				93ADB9A118D3FCE0006AA19F /* SKAction+SKTSpecialEffects.m */,
+				93ADB9A218D3FCE0006AA19F /* SKEmitterNode+SKTExtras.h */,
+				93ADB9A318D3FCE0006AA19F /* SKEmitterNode+SKTExtras.m */,
+				93ADB9A418D3FCE0006AA19F /* SKNode+SKTDebugDraw.h */,
+				93ADB9A518D3FCE0006AA19F /* SKNode+SKTDebugDraw.m */,
+				93ADB9A618D3FCE0006AA19F /* SKNode+SKTExtras.h */,
+				93ADB9A718D3FCE0006AA19F /* SKNode+SKTExtras.m */,
+				93ADB9A818D3FCE0006AA19F /* SKTAudio.h */,
+				93ADB9A918D3FCE0006AA19F /* SKTAudio.m */,
+				93ADB9AA18D3FCE0006AA19F /* SKTEffects.h */,
+				93ADB9AB18D3FCE0006AA19F /* SKTEffects.m */,
+				93ADB9AC18D3FCE0006AA19F /* SKTTimingFunctions.h */,
+				93ADB9AD18D3FCE0006AA19F /* SKTTimingFunctions.m */,
+				93ADB9AE18D3FCE0006AA19F /* SKTUtils.h */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		93ADB9AF18D3FCE0006AA19F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				93ADB9B018D3FCE0006AA19F /* coin.wav */,
+				93ADB9B118D3FCE0006AA19F /* ding.wav */,
+				93ADB9B218D3FCE0006AA19F /* falling.wav */,
+				93ADB9B318D3FCE0006AA19F /* flapping.wav */,
+				93ADB9B418D3FCE0006AA19F /* hitGround.wav */,
+				93ADB9B518D3FCE0006AA19F /* pop.wav */,
+				93ADB9B618D3FCE0006AA19F /* whack.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93ADB90A18D3F272006AA19F /* ClassyBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93ADB94418D3F272006AA19F /* Build configuration list for PBXNativeTarget "ClassyBird" */;
+			buildPhases = (
+				93ADB90718D3F272006AA19F /* Sources */,
+				93ADB90818D3F272006AA19F /* Frameworks */,
+				93ADB90918D3F272006AA19F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClassyBird;
+			productName = ClassyBird;
+			productReference = 93ADB90B18D3F272006AA19F /* ClassyBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93ADB93218D3F272006AA19F /* ClassyBirdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93ADB94718D3F272006AA19F /* Build configuration list for PBXNativeTarget "ClassyBirdTests" */;
+			buildPhases = (
+				93ADB92F18D3F272006AA19F /* Sources */,
+				93ADB93018D3F272006AA19F /* Frameworks */,
+				93ADB93118D3F272006AA19F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93ADB93918D3F272006AA19F /* PBXTargetDependency */,
+			);
+			name = ClassyBirdTests;
+			productName = ClassyBirdTests;
+			productReference = 93ADB93318D3F272006AA19F /* ClassyBirdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93ADB90318D3F272006AA19F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ClassyBird;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Aaron Rama";
+				TargetAttributes = {
+					93ADB93218D3F272006AA19F = {
+						TestTargetID = 93ADB90A18D3F272006AA19F;
+					};
+				};
+			};
+			buildConfigurationList = 93ADB90618D3F272006AA19F /* Build configuration list for PBXProject "ClassyBird" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93ADB90218D3F272006AA19F;
+			productRefGroup = 93ADB90C18D3F272006AA19F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93ADB90A18D3F272006AA19F /* ClassyBird */,
+				93ADB93218D3F272006AA19F /* ClassyBirdTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93ADB90918D3F272006AA19F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADB9B818D3FCE0006AA19F /* sprites.atlas in Resources */,
+				93ADB9C518D3FCE0006AA19F /* hitGround.wav in Resources */,
+				93ADB9C218D3FCE0006AA19F /* ding.wav in Resources */,
+				93ADB91B18D3F272006AA19F /* InfoPlist.strings in Resources */,
+				93ADB9C418D3FCE0006AA19F /* flapping.wav in Resources */,
+				93ADB92E18D3F272006AA19F /* Images.xcassets in Resources */,
+				93ADB9C318D3FCE0006AA19F /* falling.wav in Resources */,
+				93ADB9C118D3FCE0006AA19F /* coin.wav in Resources */,
+				93ADB92418D3F272006AA19F /* Main.storyboard in Resources */,
+				93ADB9B718D3FCE0006AA19F /* backgrounds.atlas in Resources */,
+				93ADB9C618D3FCE0006AA19F /* pop.wav in Resources */,
+				93ADB9C718D3FCE0006AA19F /* whack.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ADB93118D3F272006AA19F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADB93F18D3F272006AA19F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93ADB90718D3F272006AA19F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADB92118D3F272006AA19F /* ClassyBirdAppDelegate.m in Sources */,
+				93ADB9BF18D3FCE0006AA19F /* SKTEffects.m in Sources */,
+				93ADB9BD18D3FCE0006AA19F /* SKNode+SKTExtras.m in Sources */,
+				93ADB91D18D3F272006AA19F /* main.m in Sources */,
+				93ADB9BB18D3FCE0006AA19F /* SKEmitterNode+SKTExtras.m in Sources */,
+				93ADB9B918D3FCE0006AA19F /* SKAction+SKTExtras.m in Sources */,
+				93ADB9C018D3FCE0006AA19F /* SKTTimingFunctions.m in Sources */,
+				93ADB92A18D3F272006AA19F /* ClassyBirdMyScene.m in Sources */,
+				93ADB92718D3F272006AA19F /* ClassyBirdViewController.m in Sources */,
+				93ADB9BC18D3FCE0006AA19F /* SKNode+SKTDebugDraw.m in Sources */,
+				93ADB9BA18D3FCE0006AA19F /* SKAction+SKTSpecialEffects.m in Sources */,
+				93ADB9BE18D3FCE0006AA19F /* SKTAudio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ADB92F18D3F272006AA19F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADB94118D3F272006AA19F /* ClassyBirdTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93ADB93918D3F272006AA19F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93ADB90A18D3F272006AA19F /* ClassyBird */;
+			targetProxy = 93ADB93818D3F272006AA19F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93ADB91918D3F272006AA19F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93ADB91A18D3F272006AA19F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93ADB92218D3F272006AA19F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93ADB92318D3F272006AA19F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93ADB93D18D3F272006AA19F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93ADB93E18D3F272006AA19F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93ADB94218D3F272006AA19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93ADB94318D3F272006AA19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93ADB94518D3F272006AA19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassyBird/ClassyBird-Prefix.pch";
+				INFOPLIST_FILE = "ClassyBird/ClassyBird-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93ADB94618D3F272006AA19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassyBird/ClassyBird-Prefix.pch";
+				INFOPLIST_FILE = "ClassyBird/ClassyBird-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		93ADB94818D3F272006AA19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClassyBird.app/ClassyBird";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassyBird/ClassyBird-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ClassyBirdTests/ClassyBirdTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		93ADB94918D3F272006AA19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClassyBird.app/ClassyBird";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassyBird/ClassyBird-Prefix.pch";
+				INFOPLIST_FILE = "ClassyBirdTests/ClassyBirdTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93ADB90618D3F272006AA19F /* Build configuration list for PBXProject "ClassyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93ADB94218D3F272006AA19F /* Debug */,
+				93ADB94318D3F272006AA19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93ADB94418D3F272006AA19F /* Build configuration list for PBXNativeTarget "ClassyBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93ADB94518D3F272006AA19F /* Debug */,
+				93ADB94618D3F272006AA19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93ADB94718D3F272006AA19F /* Build configuration list for PBXNativeTarget "ClassyBirdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93ADB94818D3F272006AA19F /* Debug */,
+				93ADB94918D3F272006AA19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93ADB90318D3F272006AA19F /* Project object */;
+}
